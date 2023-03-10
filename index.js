@@ -13,6 +13,10 @@ app.use("/users", require("./routes/sampleroute.js"));
 app.use("/v1/posts", require("./routes/croppostroute.js"));
 app.use("/v1/expert", require("./routes/expertadvicceroute.js"));
 
+app.get("/", (req, res) => {
+  res.status(200).send("Hello  Connected");
+});
+
 function startServer() {
   try {
     const PORT = 3000;
