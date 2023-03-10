@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 function startServer() {
   try {
     const PORT = 3000;
-    const link = "mongodb://localhost/EyicMockBackend";
+    const link = "mongodb+srv://root:root@cluster0.nlt2pof.mongodb.net/?retryWrites=true&w=majority";
     connectDb(link);
     app.listen(PORT, () => {
       console.log("Server is Started at PORT:", PORT);
