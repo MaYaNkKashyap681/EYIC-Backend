@@ -5,7 +5,9 @@ const connectDb = require("./mongodb/connect.js");
 
 //global Middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  origin = 'http://smart-bizuka-app.vercel.app'
+));
 
 //custom made routes
 
